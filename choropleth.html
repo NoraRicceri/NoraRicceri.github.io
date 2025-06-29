@@ -108,7 +108,7 @@
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 
-	// control that shows attribute info on hover
+	// control that shows state info on hover
 	const info = L.control();
 
 	info.onAdd = function (map) {
@@ -116,6 +116,7 @@
 		this.update();
 		return this._div;
 	};
+
 
 		//UPDATE to call your own data for the interactivity- the name after "props" is the attribute name - look in your js file to find the attribute to call
 		// change class breaks and color depending on your values //UPDATE for our own legend - use colorbrewer.org for ideas for colors
