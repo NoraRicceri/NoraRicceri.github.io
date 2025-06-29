@@ -122,12 +122,12 @@
 		// change class breaks and color depending on your values //UPDATE for our own legend - use colorbrewer.org for ideas for colors
 		//UPDATE legend to match the classes you coded - and the source of your data needs to reference the correct link
 	info.update = function (props) {
-		const contents = props ? `<b>${props.nam_en}</b><br />${props.SH_DataSuicidebothsex_2021} % of total land that is forest` : 'Hover over a state';
-		this._div.innerHTML = `<h4>15.1.1 Forest area as a proportion of total land area</h4>${contents}`;
+		const contents = props ? `<b>${props.nam_en}</b><br />${props.SH_DataSuicidebothsex_2021} People` : 'Hover over a state';
+		this._div.innerHTML = `<h4>3.4.2 Number of deaths by suicide per 100.000 people in 2021 </h4>${contents}`;
 	};
 
 	info.addTo(map);
-
+	
 	function getColor(d) {
 		return d > 25 ? '#7f3b08' :
 			d > 20 ? '#b35806' :
