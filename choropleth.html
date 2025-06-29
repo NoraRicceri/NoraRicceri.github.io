@@ -147,7 +147,8 @@
 			fillOpacity: 0.7,
 			fillColor: getColor(feature.properties.SH_DataSuicidebothsex_2021)
 		};
-	}
+	}ù
+	
 
 	function highlightFeature(e) {
 		const layer = e.target;
@@ -196,7 +197,7 @@
 	legend.onAdd = function (map) {
 
 		const div = L.DomUtil.create('div', 'info legend');
-		const grades = [0, 10, 20, 40, 60, 80, 100];
+		const grades = [0, 5, 10, 15, 20, 25];
 		const labels = [];
 		let from, to;
 
