@@ -148,7 +148,7 @@
 			fillColor: getColor(feature.properties.SH_DataSuicidebothsex_2021)
 		};
 	}ù
-	
+
 
 	function highlightFeature(e) {
 		const layer = e.target;
@@ -191,6 +191,7 @@
 	map.attributionControl.addAttribution('SDG data &copy; <a href="https://unstats-undesa.opendata.arcgis.com/">UN SDG DataHub</a>');
 
 
+	//UPDATE legend to match the classes you coded
 
 	const legend = L.control({position: 'bottomright'});
 
@@ -208,12 +209,12 @@
 			labels.push(`<i style="background:${getColor(from + 1)}"></i> ${from}${to ? `&ndash;${to}` : '+'}`);
 		}
 
-		labels.push(`<i style="background:#FFFFFF"></i>  No Data`);
+        labels.push(`<i style="background:#99999d"></i>  No Data`);
 
-		div.innerHTML = labels.join('<br>');
-		return div;
-	};
+        div.innerHTML = labels.join('<br>');
+        return div;
+    };
 
-	legend.addTo(map);
+    legend.addTo(map);
 
 </script>
