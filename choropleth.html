@@ -92,7 +92,7 @@
 							</ul>
 		
 							<h1>Leaflet</h1>
-							<p>We made this example in class on day 2</p>
+							<p>Look at the interactive map! Hover on the countries and discover their data</p>
 					
 					<!-- UPDATE - add your leaflet code here! I already added the necessary headers - make sure you move your js file into the root directory too -->
 							<div id='map'></div>
@@ -121,7 +121,7 @@
 		// change class breaks and color depending on your values //UPDATE for our own legend - use colorbrewer.org for ideas for colors
 		//UPDATE legend to match the classes you coded - and the source of your data needs to reference the correct link
 	info.update = function (props) {
-		const contents = props ? `<b>${props.NAME_LONG}</b><br />${props.whole2} % of total land that is forest` : 'Hover over a state';
+		const contents = props ? `<b>${props.nam_en}</b><br />${props.SH_DataSuicidebothsex_2021} % of total land that is forest` : 'Hover over a state';
 		this._div.innerHTML = `<h4>15.1.1 Forest area as a proportion of total land area</h4>${contents}`;
 	};
 
@@ -131,14 +131,14 @@
 	
 	
 	function getColor(d) {
-		return d > 100 ? '#005a32' :
-			d > 100  ? '#238b45' :
-			d > 80  ? '#41ab5d' :
-			d > 60  ? '#74c476' :
-			d > 40   ? '#a1d99b' :
-			d > 10   ? '#c7e9c0' :
-			d > 0   ? '#e5f5e0' : '#f7fcf5';
+		return d > 25 ? '#7f3b08' :
+			d > 20 ? '#b35806' :
+       		d > 15 ? '#e08214' :
+       		d > 10 ? '#fdb863' :
+       		d > 5  ? '#fee0b6' :
+       		d > 0  ? '#fff7bc' : '#99999d';
 	}
+
 
 //update the fill color to your variable 
 	function style(feature) {
