@@ -2374,6 +2374,14 @@ input, select, textarea {
 
 			}
 
+	.resized-img {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* Table */
 
 	.table-wrapper {
